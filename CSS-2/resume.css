@@ -1,0 +1,180 @@
+/*
+navbar to navigate to different sections of the page
+image tile for introduction 
+Different sections for about me
+describe hobbies
+describe interests 
+personal summary
+professional summary
+you are free to use bootstrap as you will.
+<!--<p class="gmail">GMAIL: <a href="https://gmail.com"> prakashmahecha2122@gmail</a></p>
+    <p class="edin">LINKEDIN: <a href="https://www.linkedin.com/mwlite/in/prakash-mahecha-8232271a8"> @prakashmahecha linkedin</a></p>
+    <p class="git">GITHUB: <a href="https://github.com/Prakash-Mahecha/"> @prakashmahecha github</a></p>
+-->
+*/
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  !important;
+    background-color: ghostwhite;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-areas: "img info";
+    background-color: rgb(221, 221, 221);
+    margin: 20px auto;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+.image img{
+    width: 250px;
+    height: 250px;
+    grid-area: img;
+    border: 1px solid black;
+}
+
+.edin a, .git a{
+    text-decoration: unset;
+    color: rgb(85, 15, 15);
+}
+
+.edin a:hover, .git a:hover{
+    background-color: darkslategray;
+    color: white;
+}
+
+.ID {
+    padding: 0px 0px 0px 30px;
+}
+
+.personal ul li {
+    margin: 10px 10px !important;
+    padding: 0px 15px !important;
+}
+
+section h2{
+    margin: 10px 0px;
+}
+
+.professional ul li {
+    margin: 10px 10px !important;
+    padding: 0px 15px !important;
+}
+
+.skills ul li {
+    margin: 10px 10px !important;
+    padding: 0px 15px !important;
+}
+
+.about ul li {
+    margin: 10px 10px !important;
+    padding: 0px 15px !important;
+}
+.personal, .professional, .skills, .study, .about {
+    background-color: rgb(221, 221, 221);
+    border: 2px solid black;
+    margin: 20px auto;
+    padding: 0px 0px 0px 20px;
+}
+
+.progress1 {
+    margin: 0px 0px 0px 100px;
+}
+
+.progress2 {
+    margin: 0px 0px 0px 70px;
+}
+
+.progress3 {
+    margin: 0px 0px 0px 40px;
+}
+
+.progress4 {
+    margin: 0px 0px 0px 20px;
+}
+
+.progress5 {
+    margin: 0px 0px 0px 80px;
+}
+
+.first-data{
+    padding: 5px 200px 5px 5px;
+}
+
+name h1{
+    display: inline-block;
+    margin: 20px auto; 
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 820px){
+    .ID{
+        font-size: .8em;
+        padding: 0px 0px 0px 100px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .personal, .professional, .skills, .study, .about{
+        font-size: 0.8em;
+        padding: 0px 0px 0px 70px;
+    }
+    .image img{
+        width: 120%;
+    }
+    .ID{
+        font-size: .6em;
+    }
+    .progress1 {
+        margin: 0px 0px 0px 85px;
+    }
+    
+    .progress2 {
+        margin: 0px 0px 0px 60px;
+    }
+    
+    .progress3 {
+        margin: 0px 0px 0px 35px;
+    }
+    
+    .progress4 {
+        margin: 0px 0px 0px 20px;
+    }
+    
+    .progress5 {
+        margin: 0px 0px 0px 65px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .ID{
+        padding: 0px 0px 0px 60px;
+    }
+    .image img{
+        width: 140%;
+    }
+    .skills ul li{
+        font-size: .75em;
+    }
+    .progress1 {
+        margin: 0px 0px 0px 80px;
+    }
+    
+    .progress2 {
+        margin: 0px 0px 0px 60px;
+    }
+    
+    .progress3 {
+        margin: 0px 0px 0px 40px;
+    }
+    
+    .progress4 {
+        margin: 0px 0px 0px 30px;
+    }
+    
+    .progress5 {
+        margin: 0px 0px 0px 65px;
+    }
+}
