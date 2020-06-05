@@ -119,8 +119,9 @@ name h1{
 @media screen and (max-width: 600px){
     .personal, .professional, .skills, .study, .about{
         font-size: 0.8em;
-        padding: 0px 0px 0px 70px;
+        padding: 0px 0px 0px 20px;
     }
+
     .image img{
         width: 120%;
     }
@@ -146,14 +147,24 @@ name h1{
     .progress5 {
         margin: 0px 0px 0px 65px;
     }
+    .first-data{
+        padding: 3px 100px 3px 3px;
+    }
+     .personal, .professional, .skills, .about, .study{
+        width: 111%;
+    } 
+    nav{
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 430px){
     .ID{
         padding: 0px 0px 0px 60px;
     }
     .image img{
         width: 140%;
+        height: 75%;
     }
     .skills ul li{
         font-size: .75em;
