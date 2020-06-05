@@ -151,7 +151,7 @@ name h1{
         padding: 3px 100px 3px 3px;
     }
      .personal, .professional, .skills, .about, .study{
-        width: 111%;
+        width: 112%;
     } 
     nav{
         width: 100%;
@@ -188,4 +188,19 @@ name h1{
     .progress5 {
         margin: 0px 0px 0px 65px;
     }
+    .full-stack{
+        font-size: 1.05em;
+    }
+}
+
+@media screen and (max-width: 350px){
+        .image img{
+            width: 100%;
+        }
+        .ID{
+            padding: 0px 0px 0px 40px;
+        }
+        .full-stack{
+            font-size: 1.05em;
+        }
 }
